@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Adi Shakti Tour & Travels{% endblock title %}
+
+{% block head %}
+
+{% load static %}
+<link rel="stylesheet" href={% static 'css/home.css' %}>
+
+{% endblock head %}
+
+{% block body%}
+
+<main class="relative flex flex-col m-0">
+  <div class="background  bg-scroll">
+    <img
+      class="background-img w-full h-screen	overflow-scroll"
+      src="{% static 'images/background.jpg' %}"
+      alt="background-img"
+      id="landing-background"
+    />
+  </div>
+
+  <div
+    class="glass absolute top-0 left-0 mx-3 my-3 h-1/3 flex items-center justify-between px-3"
+  >
+    <div class="logo mr-16">
+      <img
+        class="logo-img"
+        src="{% static 'images/logo.png' %}"
+        alt="logo-img"
+      />
+    </div>
+
+    <div class="location flex">
+      <img
+        class="location-img w-14 max-h-14 mx-2"
+        src="{% static 'images/pin.png' %}"
+        alt="location-img"
+      />
+      <div class="area">
+        <p class="poppins text-xl font-semibold">1st Floor, Keshri Nursing</p>
+        <p class="poppins text-lg font-thin">Home, Piska More, Ranchi</p>
+        <button class="opacity-0 my-2" action="/contact" type="submit">
+          Contact
+        </button>
+      </div>
+    </div>
+
+    <div class="contact flex">
+      <img
+        class="phone-img w-14 max-h-14 mx-2"
+        src="{% static 'images/phone-call.png' %}"
+        alt="location-img"
+      />
+      <div class="area">
+        <p class="poppins text-xl font-semibold">7970637981</p>
+        <p class="poppins text-lg font-thin">Kamakhayadharmikyat</p>
+        <a
+          class="contact-btn poppins w-full text-white bg-purple-500 hover:bg-purple-600 transition-all duration-150 ease-in-out text-center my-2"
+          href="/contact"
+          type="submit"
+          >Contact Now</a
+        >
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="lower-button absolute w-full flex justify-center bottom-0 left-0">
+    <a id="tours-btn" class="package-btn poppins relative mb-16 top-0 left-0 px-8 py-2 text-white hover:bg-purple-600" href="#all-tours">All Tour Packages</a>
+  </div>
+
+
+
+</main>
+
+  <div class="tours m-0 mt-1 relative">
+    <div class="tours-background">
+      <img class="back-img" src="{% static 'images/background2.png' %}" alt="background-2">
+    </div>
+
+    <div class="head flex justify-center">
+      <h1 class="all-tours-head poppins text-2xl absolute top-0" name="all-tours" id="all-tours">All Tour Packages</h1>
+    </div>
+  </div>
+
+{% comment %}
+<div>
+  <div class="grid grid-cols-7 gap-2 mx-5 border-2 border-zinc-800">
+    <div class="col-start-1 col-span-2">
+      <img src="{% static 'images/rameshwaram.jpg' %}" alt="image-1" />
+    </div>
+    <div class="col-start-3 col-span-2">
+      <img
+        class="w-full"
+        src="{% static 'images/badrinath.jpg' %}"
+        alt="image-2"
+      />
+    </div>
+    <div class="col-start-5 col-span-3">
+      <img
+        class="w-full h-full"
+        src="{% static 'images/horizontal.jpg' %}"
+        alt="image-3"
+      />
+    </div>
+    <div class="col-start-1 col-span-2">
+      <img
+        class="w-full h-full"
+        src="{% static 'images/simla.jpg' %}"
+        alt="image-4"
+      />
+    </div>
+    <div class="col-start-3 col-span-3">
+      <img
+        class="w-full h-full"
+        src="{% static 'images/kedarnath.jpg' %}"
+        alt="image-4"
+      />
+    </div>
+    <div class="col-start-6 col-end-8">
+      <img class="h-full" src="{% static 'images/image.jpg' %}" alt="image-4" />
+    </div>
+  </div>
+</div>
+{% endcomment %} 
+
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock body %}

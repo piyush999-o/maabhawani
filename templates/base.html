@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title>
+    {% block head %}{% endblock head %}
+  </head>
+  <body>
+    {% load static %} {% comment %} Navbar Started {% endcomment %}
+    <header class="sticky top-0 z-40 text-gray-800 body-font bg-teal-50">
+      <div
+        class="container flex flex-wrap p-2 flex-col md:flex-row items-center bg-scroll"
+      >
+        <nav
+          class="md:mr-auto md:mx-4 md:py-0 md:px-4 flex flex-wrap items-center text-xl justify-center delay-500"
+        >
+          <a
+            href="/"
+            class="font-semibold transition-all duration-300 ease-in-out px-4 py-1 hover:bg-purple-300 rounded-3xl hover:delay-75"
+            >Home</a
+          >
+          <a
+            href="/about"
+            class="font-semibold transition-all duration-300 ease-in-out px-4 py-1 hover:bg-purple-300 rounded-3xl"
+            >About us</a
+          >
+          <a
+            href="/gallery"
+            class="font-semibold transition-all duration-300 ease-in-out px-4 py-1 hover:bg-purple-300 rounded-3xl"
+            >Gallery</a
+          >
+          <a
+            href="/terms-condition"
+            class="font-semibold transition-all duration-300 ease-in-out px-4 py-1 hover:bg-purple-300 rounded-3xl"
+            >T&C</a
+          >
+          <a
+            href="/contact"
+            class="font-semibold transition-all duration-300 ease-in-out px-4 py-1 hover:bg-purple-300 rounded-3xl"
+            >Contact us</a
+          >
+        </nav>
+        {% comment %}
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-150 rounded text-base mt-4 md:mt-0"
+        >
+          Button
+        </button>
+        {% endcomment %}
+        <div class="contact flex gap-x-2.5">
+          <a class="contact-icon hover:scale-95" href="tel:7970637981">
+            <img src="{% static 'images/call.png' %}" alt="call" class="w-11" />
+          </a>
+          <a class="contact-icon hover:scale-95" href="mailto:maakamakhayadharmikrailyatra@gmail.com">
+            <img
+              src="{% static 'images/gmail.png' %}"
+              alt="call"
+              class="w-11"
+            />
+          </a>
+          <a class="contact-icon hover:scale-95" href="https://api.whatsapp.com/send?phone=+917079088000&text=Hi,%20I%20contacted%20you%20Through%20your%20website." target='_blank'>
+            <img
+              src="{% static 'images/whatsapp.png' %}"
+              alt="call"
+              class="w-11"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    {% comment %} Navbar ended {% endcomment %}
+    {% block body %}
+    {% endblock body %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0e156b1e90.js" crossorigin="anonymous"></script>
+  </body>
+</html>

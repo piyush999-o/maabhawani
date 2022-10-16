@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a{
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, .8);
+    width: 98.2%;
+}
+
+.contact-btn{
+    padding: 4px 15px;
+    border-radius: 25px;
+    word-spacing: 2px;
+}
+/* 
+.lower-button{
+    border: 1px solid black;
+} */
+
+.package-btn{
+    border-radius: 15px;
+    background: linear-gradient(268.49deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    box-shadow: 4px 4px 8px rgba(173, 0, 255, 1),
+                -4px -4px 8px rgba(31, 185, 251, 1);
+    animation-name: spiral;
+    animation-duration: .6s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spiral {
+    0%{
+        background: linear-gradient(0deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    10%{
+        background: linear-gradient(36deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    20%{
+        background: linear-gradient(72deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    30%{
+        background: linear-gradient(108deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    40%{
+        background: linear-gradient(144deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    50%{
+        background: linear-gradient(180deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    60%{
+        background: linear-gradient(216deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    70%{
+        background: linear-gradient(252deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    80%{
+        background: linear-gradient(288deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    90%{
+        background: linear-gradient(324deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+    100%{
+        background: linear-gradient(360deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    }
+}
+
+.package-btn:hover{
+    background: linear-gradient(91.51deg, rgba(31, 185, 251, 1) 1.77%, rgba(173, 0, 255, 1) 69.32%, rgba(173, 0, 255, 1) 69.32%);
+    animation-name: none;
+}
