@@ -76,13 +76,54 @@
 </main>
 
   <div class="tours m-0 mt-1 relative">
-    <div class="tours-background">
+    {% comment %} <div class="tours-background">
       <img class="back-img" src="{% static 'images/background2.png' %}" alt="background-2">
+    </div> {% endcomment %}
+
+    <div class="tours-head flex justify-center">
+      <h1 class="all-tours-head poppins relative text-2xl font-semibold" name="all-tours" id="all-tours">All Tour Packages</h1>
     </div>
 
-    <div class="head flex justify-center">
-      <h1 class="all-tours-head poppins text-2xl absolute top-0" name="all-tours" id="all-tours">All Tour Packages</h1>
-    </div>
+    <div class="all-items">
+      <div class="container-items">
+        
+        {% for tour in tours %}
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img class="tour-img" src='/media/{{ tour.image }}' alt="card-image">
+              <p class="tours-title font-bold text-2xl">{{ tour.title }}</p>
+            </div>
+          </div>
+
+          <div class="face face2">
+            <div class="content grid grid-rows-2 grid-cols-2">
+              <section class="duration">
+                <span>Duration:</span>
+                <span>{{ tour.duration }} Days</span>
+              </section>
+
+              <section class="origin">
+                <span>Origin:</span>
+                <span>{{ tour.origin }}</span>
+              </section>
+
+              <section class="city">
+                <span>City:</span>
+                <span>{{ tour.city| truncatechars:50}}</span>
+              </section>
+
+              <section class="fare">
+                <span class="block">Fare:</span>
+                  <span>Rs. {{ tour.sleeper_fare }} (Sleeper)<br>
+                  Rs. {{ tour.ac_fare }} (3rd A.C.)</span>
+              </section>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+                
+      </div>
   </div>
 
 {% comment %}
@@ -126,5 +167,5 @@
 </div>
 {% endcomment %} 
 
-<script src="{% static 'js/home.js' %}"></script>
+<script src="{% static 'js/home.js' %}" defer></script>
 {% endblock body %}

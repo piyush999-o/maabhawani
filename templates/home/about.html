@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}About AdiYogi{% endblock title %}
+
+{% block head %}
+
+{% load static %}
+<link rel="stylesheet" href={% static 'css/about.css' %}>
+<link rel="stylesheet" href={% static 'css/home.css' %}>
+
+{% endblock head %}
+
+{% block body %}
+
+<div class="py-16 bg-white">
+  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-1">
+    <div
+      class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 justify-end"
+    >
+      <div class="md:5/12 lg:w-5/12">
+        <img
+          {% comment %} src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png" {% endcomment %}
+          src={% static 'images/icon_logo.png' %}
+          alt="image"
+          loading="lazy"
+          width=""
+          height=""
+        />
+      </div>
+      <div class="md:7/12 lg:w-6/12 text-justify">
+        <h2 class="text-2xl text-gray-900 font-bold md:text-4xl poppins">
+          AdiYogi Tour & Travels
+        </h2>
+        <p class="mt-6 text-gray-600 poppins">
+            Ranchi is one of the best organization of your pilgrimage yatra which
+            we have found for those people who love to travel around various
+            religious places all over India.
+            <br>
+            We at Maa Kamakhaya Dharmik Yatra
+            have one simple objective which is to satisfy our customer with our
+            best services and make a long term bond with no snags.
+        </p>
+        <p class="mt-6 text-gray-600 poppins">
+            We have a young team of professionals who will help in every customer queries and
+            demands.
+            <br>
+            We are trusted Organization religious yatra's where you can
+            book your tour for various places like Vaishno Devi, Tirupati Balaji,
+            Chardham Yatra, Shirdi etc. We prepare your pilgrimage tours with
+            distinctive spiritual experience with lowest price across India
+        </p>
+        <p class="mt-6 text-gray-600 poppins">
+            We valued our customers and that's why we provide you with the first
+            class religious experience and packages.
+            <br>
+            This gives us a zealous
+            imminent into the travel industry and a thoughtful of what it takes to
+            make a yatra truly special.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6 mt-10">
+    <div
+      class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 justify-end"
+    >
+      <div class="md:7/12 lg:w-6/12 text-justify">
+        <h2 class="text-2xl text-gray-900 font-bold md:text-4xl poppins">
+          Our Mission
+        </h2>
+        <ul class="list-disc list-inside poppins">
+        <li class="mt-6 text-gray-600">
+            Adi Yogi Tour & Travels strives to provide high quality services and utmost customer satisfaction.</li>
+            <br>
+        <li>
+            To perform for our customers the highest level of quality services at fair and market competitive prices.
+        </li>
+        <li class="mt-6 text-gray-600">
+            To ensure the longevity of our company through repeat and referral business achieved by customer satisfaction in all areas including timeliness, attention to detail and service-minded attitudes.</li>
+            <br>
+        <li>
+            Our pledge is to establish lasting relationships with our customers by exceeding their expectations and gaining their trust through exceptional performance by every member of the construction team.
+        </li>
+        <li class="mt-6 text-gray-600">
+            To maintain the highest levels of professionalism, integrity, honesty and fairness in our relationships with our professional associates.
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

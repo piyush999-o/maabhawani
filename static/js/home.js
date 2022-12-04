@@ -12,8 +12,8 @@ function scrollFunction() {
     });
 }
 
-if (document.documentElement.scrollTop <= 50) {
-    toursBtn.href = "#all-tours"
-} else {
-    toursBtn.href = "#"
-}
+// if (document.documentElement.scrollTop <= 50) {
+//     toursBtn.href = "#all-tours"
+// } else {
+//     toursBtn.href = "#"
+// }
