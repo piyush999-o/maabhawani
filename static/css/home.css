@@ -18,7 +18,7 @@ a {
 }
 
 .glass {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .9);
     width: 98.2%;
 }
 
@@ -32,6 +32,7 @@ a {
 .lower-button{
     border: 1px solid black;
 } */
+
 
 .package-btn {
     border-radius: 15px;
@@ -193,15 +194,40 @@ div.tours {
 }
 
 .tour-img {
-    height: 275px;
+    height: 270px;
     width: 371px;
     object-fit: cover;
 }
 
-.container-items .card .face.face2 .content section span{
+.background-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+    .background-img {
+        background-image: url(/static/images/phone-background.jpg);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .background-img {
+        background-image: url(/static/images/phone-background.jpg);
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .background-img {
+        background-image: url(/static/images/background.jpg);
+    }
+}
+
+.container-items .card .face.face2 .content section span {
     font-family: 'Poppins', sans-serif;
 }
-.container-items .card .face.face2 .content section span:nth-child(1){
+
+.container-items .card .face.face2 .content section span:nth-child(1) {
     margin: 0;
     padding: 0;
     padding-right: 5px;

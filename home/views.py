@@ -21,7 +21,7 @@ def gallery(request):
 
 
 def terms(request):
-    return HttpResponse("<h1> Server is Running Terms and Condition</h1>")
+    return render(request, 'home/terms.html')
 
 
 def contact(request):
@@ -35,7 +35,6 @@ def contact(request):
 
         # Email Variables
 
-
     # try:
     #     subject = "New Email From Website"
     #     message = f'Name: {name}, Email: {email}, Phone: {phone}, Messsage: {content}'
@@ -47,9 +46,10 @@ def contact(request):
     # except Exception as e:
     #     print(e)
 
-    
     return render(request, 'home/contact.html')
 
 
 def tour_details(request, id):
-    return HttpResponse(f"<h1> Server is Running tour details {id}</h1>")
+    tours = Tour.objects.filter(sno=id)[0]
+    context = {'tour': tours}
+    return render(request, 'home/details.html', context)

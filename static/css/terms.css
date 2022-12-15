@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+td{
+    margin: 10px 10px;
+    border: 1px solid silver;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+td:hover{
+    background-color: rgb(235, 235, 235);
+    color: #000;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
